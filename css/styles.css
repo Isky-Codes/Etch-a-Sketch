@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+    text-align: center;
+}
+.gridContainer {
+    width: 70rem;
+    height: 70rem;
+    margin: auto;
+    margin-top: 5rem;
+    border: 2px dashed red;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: start;
+    
+
+}
+
+.innerGrid {
+    width: 6.25%;
+    height: 6.25%;
+    border: 0.01rem solid rgb(161, 155, 155);
+}
+
+.gridColor {
+    background-color: black;
+}
