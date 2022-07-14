@@ -1,5 +1,6 @@
 const gridMain = document.getElementById('gridContainer');
 const gridButton = document.querySelector('.setBtn');
+const resetButton = document.querySelector('.resetBtn');
 
 
 //Create the inner <div>'s
@@ -37,6 +38,14 @@ gridButton.addEventListener('click', function() {
         createGrid(totalGrid);
     }
 });
+
+//Reset Button
+resetButton.addEventListener('click', function() {
+    console.log('hello');
+    gridMain.innerHTML = "";
+});
+
+createGrid(256);
 
 
 
