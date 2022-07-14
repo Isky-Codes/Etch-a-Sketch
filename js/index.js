@@ -35,14 +35,15 @@ gridButton.addEventListener('click', function() {
     if(gridSize > 100) {
         alert('This number is too big: choose a number below 100');
     }else {
+        gridMain.innerHTML ="";
         createGrid(totalGrid);
     }
 });
 
 //Reset Button
 resetButton.addEventListener('click', function() {
-    console.log('hello');
     gridMain.innerHTML = "";
+    createGrid(256);
 });
 
 createGrid(256);
